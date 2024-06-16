@@ -10,7 +10,7 @@ function convert() {
 		hasil.value = `${celcius.value}°C * (9 / 5) + 32 = ${fahrenheit.value}°F`;
 	} else {
 		fahrenheit.value = ((+celcius.value - 32) * (5 / 9)).toFixed(2);
-		hasil.value = `${fahrenheit.value}°${isCelcius ? "C" : "F"} - 32 * (5 / 9) = ${celcius.value}°${isCelcius ? "F" : "C"}`;
+		hasil.value = `${celcius.value}°${isCelcius ? "C" : "F"} - 32 * (5 / 9) = ${fahrenheit.value}°${isCelcius ? "F" : "C"}`;
 	}
 }
 
