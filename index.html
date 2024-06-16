@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>KONVERSI "SUHU"</title>
+		<link rel="stylesheet" href="/assets/css/style.css" />
+		<script src="/assets/js/script.js"></script>
+	</head>
+	<body>
+		<main class="container">
+			<div class="card">
+				<h4 class="title">Konversi suhu:</h4>
+				<div class="input-group">
+					<div class="input-field">
+						<div class="input-header">
+							<p id="c">Celcius (&deg;C)</p>
+						</div>
+						<input id="celcius" value="" placeholder="Masukan Nilai" class="input" />
+					</div>
+					<div class="input-field">
+						<div class="input-header">
+							<p id="f">Fahrenheit (&deg;F)</p>
+						</div>
+						<input id="fahrenheit" disabled value="" placeholder="Hasil Konversi" class="input input-f" />
+					</div>
+				</div>
+
+				<div class="button-group">
+					<div onclick="convert()" class="button max-w-sm">Konversi</div>
+					<div onclick="reset()" class="button">Reset</div>
+					<div onclick="reverse()" class="button">Reverse</div>
+				</div>
+
+				<h4 class="footer">Cara kalkulasi:</h4>
+				<div class="footer-group">
+					<div class="footer-header">
+						<p>Formula</p>
+					</div>
+					<input placeholder="..." disabled value="" id="hasil" class="footer-input" />
+				</div>
+			</div>
+		</main>
+	</body>
+</html>
