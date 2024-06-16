@@ -25,9 +25,6 @@ function reset() {
 }
 
 function reverse() {
-	reset();
-	reset();
-
 	let celcius = document.querySelector("#c");
 	let fahrenheit = document.querySelector("#f");
 	let celciusInput = document.querySelector("#celcius");
@@ -46,4 +43,6 @@ function reverse() {
 	}
 
 	isCelcius = !isCelcius;
+
+	reset();
 }
